@@ -10,7 +10,9 @@ const Auth = () => {
 
   return (
     <div>
-        {isAuthenticated ? (<p>You are now authenticated, you can proceed</p>) : (<p>you are not authenticated</p>)}
+        <p className='authText'>
+            {isAuthenticated ? "You are now authenticated, you can proceed" : "you are not authenticated"}
+        </p>
         <input value={isAuthenticated} onChange={handleClick} type="checkbox" id="checkbox"/><label>I'm not a robot</label>
     </div>
   )
